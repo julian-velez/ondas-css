@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    height: 100vh;
+  }
+  
+  .ondas {
+    width: 56px;
+    height: 245px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    margin: 18px;
+    animation: onda-move 1s linear infinite;
+  }
+  
+  @keyframes onda-move {
+    0% {
+      transform: rotate(45deg) scale(1);
+    }
+    50% {
+      transform: rotate(160deg) scale(1.1)translate(-67px);
+    }
+    100% {
+      transform: rotate(145deg) scale(1);
+    }
+  }
+  
